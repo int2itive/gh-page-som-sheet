@@ -1,0 +1,280 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --text-clr-dark: hsl(240,4.3%,3.5%);
+	--colorPrimaryDark: hsl(225,59.3%,10.6%);
+	--colorPrimaryLight: hsl(0,0%,23.7%);
+  --colorBackgroundDark: hsl(0,0%,15.5%);
+}
+
+body {
+  font-family: "raleway";
+  color: #c0c0c0;
+  padding: 0;
+  background-color: #000;
+}
+
+.hero--section {
+  position: relative;
+  height: 433px;
+  background-image: url('https://i.ibb.co/Ht2gHSd/slr-martin-lopez-2240766.jpg');
+  background-size: cover;
+  background-position: center top;
+  margin-bottom: -10rem;
+  margin-top: 0;
+  padding: 0;
+  z-index: -1;
+}
+
+.hero--section::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, .65);
+/*   background: hsla(225,59.3%,17.3%, .85); */
+}
+
+.logo--container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+  mix-blend-mode: screen;
+}
+
+.logo--img-wrap {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.logo--img-wrap img {
+  max-width: 100%;
+  height: auto;
+  opacity: .8;
+}
+
+.general-stats {
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem .75rem;
+  border: 1px solid rgba(0, 0, 0, .3);
+  background-color: #e6e6e6;
+  background-color: var(--colorBackgroundDark);
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);  
+}
+
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  padding-top: .25rem;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 4rem;
+/*   border: 1px solid #c0c0c0; */
+}
+
+label {
+  margin-bottom: .5rem;
+}
+
+label, input {
+  margin-bottom: 1rem;
+}
+
+label, button {
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+input {
+  width: 130%;
+  align-self: center;
+  font-weight: 700;
+  font-size: 18px;
+  padding: .5rem 1rem;
+  border-radius: 8px;
+  border: 0;
+/*   margin: 0;   */
+}
+
+@media (min-width: 30rem) {
+  input {
+    width: 90%;
+  }
+}
+
+button {
+  font-size: 1.1235rem;
+  width: 100px;
+  margin: 0 auto;
+  padding: .5rem 1rem;
+  border-radius: 8px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+button:hover {
+  background-color: hsla(225,59.3%,27.3%, .85);
+  color: #c0c0c0;
+}
+
+.display--rap-sheet {
+  margin: .5rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+/*   align-items: center; */
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+/*   border: 1px solid #c0c0c0; */
+}
+
+ul li span {
+  display: inline-block;
+  font-size: 1.175rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #c0c0c0;
+  color: hsl(27.7,71.2%,52.4%);    
+/*   color: var(--text-clr-dark); */
+  margin-bottom: .3rem;
+}
+
+ul li p {
+  font-size: .75rem;
+  text-transform: uppercase;
+  color: #898989;
+  color: var(--colorPrimaryLight);
+  color: hsl(0,0%,47.1%);
+}
+
+.rap-details {
+  position: relative;
+  padding: 0 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+/*   border: 1px solid #c0c0c0; */
+}
+
+.display--rap-sheet p {
+  position: relative;
+  width: 98%;
+  color: #c0c0c0;
+  text-transform: uppercase;
+  font-weight: 700;
+/*   border: 1px solid #c0c0c0; */
+}
+
+.display--rap-sheet .uppercase-light {
+  text-transform: uppercase;
+  color: hsl(0,0%,47.1%);
+  font-weight: 300;
+}
+
+.list {
+  list-style: none;
+}
+
+.list-wrapper {
+  cursor: pointer;
+  font-size: 1.5rem;
+  height: 0;
+  list-style: none;
+  position: relative;
+  text-align: center;
+  width: 700px;
+}
+
+.list-wrpper:not(:first-child) {
+  margin-top: 10px;
+}
+
+.list-wrapper .list-item {
+  background-color: #D3D3D3;
+  left: 0;
+  padding: 2rem 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.6s ease-out;
+  width: 100%;
+}
+
+.add-btn {
+  background-color: transparent;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: 2.5rem;
+  margin-top: 10px;
+  padding: 2rem 0;
+  text-align: center;
+  width: 300px;
+}
+
+.ul--event-list {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.ul--event-list > li {
+  display: flex;
+  flex-direction : column;
+    flex-wrap: wrap;
+  justify-content: space-between;
+/*   align-items: center; */
+  margin: 0;
+}
+
+.ul--event-list li p {
+  margin: 0;
+/*   color: firebrick; */
+/*   display: inline-block; */
+}
+
+
+.ul--event-list > li > p:first-child {
+  color: hsl(27.7,71.2%,52.4%);
+}
+
+
+@media (min-width: 30rem) {
+  .ul--event-list > li {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 53.75rem) {
+  .general-stats {
+    max-width: 800px;
+  }
+}
