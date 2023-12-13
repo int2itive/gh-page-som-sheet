@@ -99,6 +99,7 @@ function hasLookupName(evnt) {
   function tryThisAgain(lookup) {
       // if (apps.length) apps = [];
       eventList.innerHTML = "";
+      ttlapps = 0;
       let sizeCheck = (apps.length) ? true : false;
       if (sizeCheck) apps.splice(0,apps.length);
 
