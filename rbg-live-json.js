@@ -190,7 +190,7 @@ const perfdata = [
     "event": {
        "headline": "Sola Story",
        "theme": {
-          "title": "The Ancestors Will Always FindÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â¿Ãƒâ€šÃ‚Â½..",
+          "title": "The Ancestors Will Always Find A Mouthpiece",
           "feature_story": "The Ancestors Will Always FindÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â¿Ãƒâ€šÃ‚Â½.."
        },
        "guests": ["Diana Phillips","Edward, the Poet","Griot Chinyere","Princess Latifah","Princess Ziah","Princess Poet","Moina McInnis","Yemisi"]
@@ -764,7 +764,7 @@ const perfdata = [
         "event": {
            "headline": "Griot Chinyere",
            "theme": {
-                "title": "Wombman Rising",
+                "title": "Wombman Rising: Afrika & Equity",
                 "feature_story": ""
            },
            "guests": ["Sheda of Holda Poetry", "Shevelle Serita", "Charlynne Bryan", "Sista J. Afrika"]
@@ -837,7 +837,7 @@ const perfdata = [
                 "title": "Saluting Our Sisters",
                 "feature_story": ""
            },
-           "guests": ["Sassy Cokes", "Charlynne", "Ms BitterSweet", "Sandra A. Agard", "Rare Diamond"]
+           "guests": ["Sassy Cokes", "Charlynne Bryan", "Ms BitterSweet", "Sandra A. Agard", "Rare Diamond"]
         },
         "notes": "Annual Black History Month Event."
     },
@@ -851,7 +851,7 @@ const perfdata = [
                  "title": "Growing In Our Strength",
                  "feature_story": ""
             },
-            "guests": ["Rare Diamond", "James Bee", "Knadake Makonnen", "Jammers", "Sista J. Afrika"]
+            "guests": ["Rare Diamond", "James Bee", "Kandake Makonnen", "Jammers", "Sista J. Afrika"]
          },
          "notes": "This event had been postponsed from it's intended July date."
     }
