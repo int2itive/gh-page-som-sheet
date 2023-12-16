@@ -552,7 +552,7 @@ const perfdata = [
     "date": "23/12/2021",
     "special_status": true,
     "event": {
-       "headline": "Sandra A Agard",
+       "headline": "Sandra A. Agard",
        "theme": {
           "title": "Kwanzaa",
           "feature_story": ""
