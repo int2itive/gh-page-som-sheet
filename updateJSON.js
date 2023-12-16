@@ -91,10 +91,10 @@ function hasLookupName(evnt) {
     return (headline == lookupName || guests.indexOf(lookupName) != -1);
 }
 
-  const out = perfdata.filter(hasLookupName).map(generateEventList).join('');
+  //const out = perfdata.filter(hasLookupName).map(generateEventList).join('');
 // console.log(out);
 
-  eventList.innerHTML = out;  
+  //eventList.innerHTML = out;  
     
   function tryThisAgain(lookup) {
       // if (apps.length) apps = [];
