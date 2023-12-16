@@ -163,45 +163,45 @@ function hasLookupName(evnt) {
   });
     
 
-function fillAppearDetails (id, arr) {
-      test.innerHTML = `<ul>
-    <div class="list-container">
-      <li>
-        <span>${id}</span>
-        <p class="uppercase-light">Name</p>
-      </li>      
-    </div>
-    <div class="list-container">
-      <li>
-        <span>${arr.length}</span>
-        <p class="uppercase-light">Appearances</p>      
-      </li>      
-    </div>
-    <div class="list-container">
-      <li>
-        <span>${arr[0]}</span>
-        <p class="uppercase-light">Appeared First</p>      
-      </li>      
-    </div>
-    <div class="list-container">
-      <li>
-        <span>${arr[arr.length-1]}</span>
-        <p class="uppercase-light">Most Recent</p>      
-      </li>      
-    </div>
-    <div class="list-container">
-      <li>
-        <span>${ttlapps}</span>
-        <p class="uppercase-light">Headlines</p>
-      </li>      
-    </div>
-    <div class="list-container">
-      <li>
-        <span>${arr.length - ttlapps}</span>
-        <p class="uppercase-light">Guest</p>
-      </li>      
-    </div>    
-  </ul>`;
-}
+  function fillAppearDetails (id, arr) {
+        test.innerHTML = `<ul>
+      <div class="list-container">
+        <li>
+          <span>${id}</span>
+          <p class="uppercase-light">Name</p>
+        </li>      
+      </div>
+      <div class="list-container">
+        <li>
+          <span>${arr.length}</span>
+          <p class="uppercase-light">Appearances</p>      
+        </li>      
+      </div>
+      </div>
+      <div class="list-container">
+        <li>
+          <span>${ttlapps}</span>
+          <p class="uppercase-light">Headlines</p>
+        </li>      
+      </div>
+      <div class="list-container">
+        <li>
+          <span>${arr.length - ttlapps}</span>
+          <p class="uppercase-light">Guest</p>
+        </li>      
+      </div>  
+      <div class="list-container">
+        <li>
+          <span>${arr[0]}</span>
+          <p class="uppercase-light">Appeared First</p>      
+        </li>      
+      </div>
+      <div class="list-container">
+        <li>
+          <span>${arr[arr.length-1]}</span>
+          <p class="uppercase-light">Most Recent</p>      
+        </li>      
+    </ul>`;
+  }
     
 });
