@@ -86,6 +86,20 @@ function generateEventList(eventFilter) {
   // return unOrder;
 }
 
+function generateTitle(str) {
+  console.log(str);
+  let getWords = str.split(" "); // console.log(y.length);  
+    const finalSentence = str.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase()); // console.log(finalSentence);  
+    const charLocation = finalSentence.indexOf('Of'); // console.log(charLocation);  
+    const midWord = finalSentence.charAt(charLocation);
+    const d = midWord.toLowerCase();
+    // console.log(d);
+    const nameStringStart = finalSentence.substring(0, charLocation-1);
+    const nameStringEnd = finalSentence.substring(charLocation+1, finalSentence.length); 
+    // console.log(`${nameStringStart} ${d}${nameStringEnd}`);
+    return `${nameStringStart} ${d}${nameStringEnd}`;  
+}    
+
 function hasLookupName(evnt) {
     const { event: {headline, guests} } = evnt;
     return (headline == lookupName || guests.indexOf(lookupName) != -1);
@@ -137,6 +151,15 @@ function hasLookupName(evnt) {
     e.preventDefault();
     let data = new FormData(form);
     let userId = data.get('title');
+    //let numSpaces = dummyString.indexOf(" ");
+    let nWords = userId.split(' ');
+    if (nWords.length > 3) {
+      let nameNew = generateTitle(userId);
+      userId = nameNew;
+    } else {
+      let nameNew = userId.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
+      userId = nameNew;
+    }    
     let testArr = [];
 
     testArr = tryThisAgain(userId);
